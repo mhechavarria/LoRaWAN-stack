@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/frdmkl46z_LoraWan_spi_polling_b2b_transfer_master/board/peripherals.c" element2="/frdmkl46z_LoraWan_spi_polling_b2b_transfer_master/board/peripherals.h" element3="/frdmkl46z_LoraWan_spi_polling_b2b_transfer_master/board/pin_mux.c" element4="/frdmkl46z_LoraWan_spi_polling_b2b_transfer_master/board/pin_mux.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1549111740564"/>
+</session>

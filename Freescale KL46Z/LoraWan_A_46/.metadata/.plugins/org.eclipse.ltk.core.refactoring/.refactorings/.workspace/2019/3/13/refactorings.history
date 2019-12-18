@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;frdmkl46z_LoraWan_spi_polling_b2b_transfer_master/board/rtc-board.c&apos;" deleteContents="false" description="Delete resource &apos;frdmkl46z_LoraWan_spi_polling_b2b_transfer_master/board/rtc-board.c&apos;" element1="/frdmkl46z_LoraWan_spi_polling_b2b_transfer_master/board/rtc-board.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1553544531147"/>
+</session>

@@ -1,0 +1,1228 @@
+16:24:12 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:       99848 B       256 KB     38.09%
+            SRAM:        9820 B        32 KB     29.97%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+  99492	    356	   9464	 109312	  1ab00	frdmkl46z_tpm_timer.axf
+ 
+16:50:39 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/region/RegionAU915.c
+Building file: ../drivers/mac/region/Region.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/region/Region.d" -MT"drivers/mac/region/Region.o" -MT"drivers/mac/region/Region.d" -o "drivers/mac/region/Region.o" "../drivers/mac/region/Region.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/region/RegionAU915.d" -MT"drivers/mac/region/RegionAU915.o" -MT"drivers/mac/region/RegionAU915.d" -o "drivers/mac/region/RegionAU915.o" "../drivers/mac/region/RegionAU915.c"
+Finished building: ../drivers/mac/region/Region.c
+ 
+Finished building: ../drivers/mac/region/RegionAU915.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:       99848 B       256 KB     38.09%
+            SRAM:        9820 B        32 KB     29.97%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+  99492	    356	   9464	 109312	  1ab00	frdmkl46z_tpm_timer.axf
+ 
+17:07:54 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      107228 B       256 KB     40.90%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 106872	    356	   9708	 116936	  1c8c8	frdmkl46z_tpm_timer.axf
+ 
+17:48:39 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/region/Region.c
+Building file: ../drivers/mac/region/RegionAU915.c
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/region/RegionAU915.d" -MT"drivers/mac/region/RegionAU915.o" -MT"drivers/mac/region/RegionAU915.d" -o "drivers/mac/region/RegionAU915.o" "../drivers/mac/region/RegionAU915.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/region/Region.d" -MT"drivers/mac/region/Region.o" -MT"drivers/mac/region/Region.d" -o "drivers/mac/region/Region.o" "../drivers/mac/region/Region.c"
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'CalcDownlinkChannelAndFrequency':
+../drivers/mac/LoRaMacClassB.c:225:5: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+     printf("channel= %d freq= %d",channel,frequency);
+     ^~~~~~
+     sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+Finished building: ../drivers/mac/region/Region.c
+ 
+ 
+Finished building: ../drivers/mac/region/RegionAU915.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110664 B       256 KB     42.21%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110308	    356	   9708	 120372	  1d634	frdmkl46z_tpm_timer.axf
+ 
+17:48:46 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+17:57:13 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'CalcDownlinkFrequency':
+../drivers/mac/LoRaMacClassB.c:181:5: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+     printf(" CalcDownlinkFrequency frequency=%d",frequency);
+     ^~~~~~
+     sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110716 B       256 KB     42.23%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110360	    356	   9708	 120424	  1d668	frdmkl46z_tpm_timer.axf
+ 
+18:27:04 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/region/RegionAU915.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/region/RegionAU915.d" -MT"drivers/mac/region/RegionAU915.o" -MT"drivers/mac/region/RegionAU915.d" -o "drivers/mac/region/RegionAU915.o" "../drivers/mac/region/RegionAU915.c"
+Finished building: ../drivers/mac/region/RegionAU915.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110724 B       256 KB     42.24%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110368	    356	   9708	 120432	  1d670	frdmkl46z_tpm_timer.axf
+ 
+18:36:57 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      107236 B       256 KB     40.91%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 106880	    356	   9708	 116944	  1c8d0	frdmkl46z_tpm_timer.axf
+ 
+18:37:02 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+19:54:33 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'CalcDownlinkChannelAndFrequency':
+../drivers/mac/LoRaMacClassB.c:227:5: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+     printf("channel= %d freq= %d",channel,frequency);
+     ^~~~~~
+     sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110672 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110316	    356	   9708	 120380	  1d63c	frdmkl46z_tpm_timer.axf
+ 
+20:21:16 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+21:12:42 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+../source/main.c: In function 'main':
+../source/main.c:1253:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led1Timer, OnLed1TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+../source/main.c:1256:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led2Timer, OnLed2TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+Finished building: ../source/main.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110672 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110316	    356	   9708	 120380	  1d63c	frdmkl46z_tpm_timer.axf
+ 
+21:41:52 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+22:24:04 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'CalcDownlinkChannelAndFrequency':
+../drivers/mac/LoRaMacClassB.c:227:5: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+     printf("channel= %d freq= %d",channel,frequency);
+     ^~~~~~
+     sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110728 B       256 KB     42.24%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110372	    356	   9708	 120436	  1d674	frdmkl46z_tpm_timer.axf
+ 
+22:27:34 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'CalcDownlinkChannelAndFrequency':
+../drivers/mac/LoRaMacClassB.c:227:5: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+     printf("channel= %d freq= %d",channel,frequency);
+     ^~~~~~
+     sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110664 B       256 KB     42.21%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110308	    356	   9708	 120372	  1d634	frdmkl46z_tpm_timer.axf
+ 
+22:31:51 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/region/Region.c
+Building file: ../drivers/mac/region/RegionAU915.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/region/Region.d" -MT"drivers/mac/region/Region.o" -MT"drivers/mac/region/Region.d" -o "drivers/mac/region/Region.o" "../drivers/mac/region/Region.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/region/RegionAU915.d" -MT"drivers/mac/region/RegionAU915.o" -MT"drivers/mac/region/RegionAU915.d" -o "drivers/mac/region/RegionAU915.o" "../drivers/mac/region/RegionAU915.c"
+Finished building: ../drivers/mac/region/Region.c
+ 
+Finished building: ../drivers/mac/region/RegionAU915.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110664 B       256 KB     42.21%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110308	    356	   9708	 120372	  1d634	frdmkl46z_tpm_timer.axf
+ 
+23:02:32 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:28:10: fatal error: timer.h: No such file or directory
+ #include "timer.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [board/rtc-board.o] Error 1
+23:05:51 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:316:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110664 B       256 KB     42.21%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110308	    356	   9708	 120372	  1d634	frdmkl46z_tpm_timer.axf
+ 
+21:29:04 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'CalcDownlinkChannelAndFrequency':
+../drivers/mac/LoRaMacClassB.c:227:5: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+     printf("channel= %d freq= %d",channel,frequency);
+     ^~~~~~
+     sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110392 B       256 KB     42.11%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110036	    356	   9708	 120100	  1d524	frdmkl46z_tpm_timer.axf
+ 
+21:46:04 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+22:38:00 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../drivers/mac/LoRaMacClassB.c: In function 'CalcDownlinkChannelAndFrequency':
+../drivers/mac/LoRaMacClassB.c:227:5: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+     printf("channel= %d freq= %d",channel,frequency);
+     ^~~~~~
+     sinhf
+../board/rtc-board.c:317:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110456 B       256 KB     42.14%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110100	    356	   9708	 120164	  1d564	frdmkl46z_tpm_timer.axf
+ 
+22:57:19 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'CalcDownlinkChannelAndFrequency':
+../drivers/mac/LoRaMacClassB.c:227:5: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+     printf("channel= %d freq= %d",channel,frequency);
+     ^~~~~~
+     sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110728 B       256 KB     42.24%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110372	    356	   9708	 120436	  1d674	frdmkl46z_tpm_timer.axf
+ 
+23:04:22 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:317:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110680 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110324	    356	   9708	 120388	  1d644	frdmkl46z_tpm_timer.axf
+ 
+23:14:35 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'CalcDownlinkChannelAndFrequency':
+../drivers/mac/LoRaMacClassB.c:227:5: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+     printf("channel= %d freq= %d",channel,frequency);
+     ^~~~~~
+     sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110672 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110316	    356	   9708	 120380	  1d63c	frdmkl46z_tpm_timer.axf
+ 
+23:25:52 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'CalcDownlinkChannelAndFrequency':
+../drivers/mac/LoRaMacClassB.c:227:5: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+     printf("channel= %d freq= %d",channel,frequency);
+     ^~~~~~
+     sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110672 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110316	    356	   9708	 120380	  1d63c	frdmkl46z_tpm_timer.axf
+ 
+23:37:35 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c: In function 'RtcTick2Ms':
+../board/rtc-board.c:172:5: error: expected ';' before 'return'
+     return mili;
+     ^~~~~~
+../board/rtc-board.c:165:11: warning: variable 'mili' set but not used [-Wunused-but-set-variable]
+  uint32_t mili=0U;
+           ^~~~
+../board/rtc-board.c:173:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../board/rtc-board.c:321:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+make: *** [board/rtc-board.o] Error 1
+23:38:09 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:322:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110732 B       256 KB     42.24%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110376	    356	   9708	 120440	  1d678	frdmkl46z_tpm_timer.axf
+ 
+23:43:05 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:322:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110640 B       256 KB     42.21%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110284	    356	   9708	 120348	  1d61c	frdmkl46z_tpm_timer.axf
+ 
+23:58:55 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:331:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110752 B       256 KB     42.25%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110396	    356	   9708	 120460	  1d68c	frdmkl46z_tpm_timer.axf
+ 
+00:03:23 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:331:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110752 B       256 KB     42.25%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110396	    356	   9708	 120460	  1d68c	frdmkl46z_tpm_timer.axf
+ 
+00:04:53 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:331:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110752 B       256 KB     42.25%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110396	    356	   9708	 120460	  1d68c	frdmkl46z_tpm_timer.axf
+ 
+00:12:18 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:331:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110776 B       256 KB     42.26%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110420	    356	   9708	 120484	  1d6a4	frdmkl46z_tpm_timer.axf
+ 
+00:18:42 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:331:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110768 B       256 KB     42.25%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110412	    356	   9708	 120476	  1d69c	frdmkl46z_tpm_timer.axf
+ 
+00:22:33 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:333:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110752 B       256 KB     42.25%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110396	    356	   9708	 120460	  1d68c	frdmkl46z_tpm_timer.axf
+ 
+00:25:57 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../board/rtc-board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/rtc-board.d" -MT"board/rtc-board.o" -MT"board/rtc-board.d" -o "board/rtc-board.o" "../board/rtc-board.c"
+../board/rtc-board.c:332:13: warning: 'RtcOverflowIrq' defined but not used [-Wunused-function]
+ static void RtcOverflowIrq( void )
+             ^~~~~~~~~~~~~~
+Finished building: ../board/rtc-board.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110672 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110316	    356	   9708	 120380	  1d63c	frdmkl46z_tpm_timer.axf
+ 
+00:26:28 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+../source/main.c: In function 'main':
+../source/main.c:1253:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led1Timer, OnLed1TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+../source/main.c:1256:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led2Timer, OnLed2TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+Finished building: ../source/main.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110664 B       256 KB     42.21%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110308	    356	   9708	 120372	  1d634	frdmkl46z_tpm_timer.axf
+ 
+00:26:32 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+00:31:50 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      107228 B       256 KB     40.90%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 106872	    356	   9708	 116936	  1c8c8	frdmkl46z_tpm_timer.axf
+ 
+00:49:20 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMac.d" -MT"drivers/mac/LoRaMac.o" -MT"drivers/mac/LoRaMac.d" -o "drivers/mac/LoRaMac.o" "../drivers/mac/LoRaMac.c"
+../drivers/mac/LoRaMac.c: In function 'ProcessMacCommands':
+../drivers/mac/LoRaMac.c:2145:17: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+                 printf("gps sec= %d y gps subsec= %d",gpsEpochTime.Seconds,gpsEpochTime.SubSeconds);
+                 ^~~~~~
+Finished building: ../drivers/mac/LoRaMac.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110680 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110324	    356	   9708	 120388	  1d644	frdmkl46z_tpm_timer.axf
+ 
+12:08:59 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110680 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110324	    356	   9708	 120388	  1d644	frdmkl46z_tpm_timer.axf
+ 
+12:24:43 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../source/main.c
+Building file: ../drivers/mac/LoRaMac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMac.d" -MT"drivers/mac/LoRaMac.o" -MT"drivers/mac/LoRaMac.d" -o "drivers/mac/LoRaMac.o" "../drivers/mac/LoRaMac.c"
+../source/main.c: In function 'main':
+../source/main.c:1253:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led1Timer, OnLed1TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+../source/main.c:1256:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led2Timer, OnLed2TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+../drivers/mac/LoRaMac.c: In function 'ProcessMacCommands':
+../drivers/mac/LoRaMac.c:2145:17: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+                 printf("gps sec= %d y gps subsec= %d",gpsEpochTime.Seconds,gpsEpochTime.SubSeconds);
+                 ^~~~~~
+Finished building: ../source/main.c
+ 
+Finished building: ../drivers/mac/LoRaMac.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110704 B       256 KB     42.23%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110348	    356	   9708	 120412	  1d65c	frdmkl46z_tpm_timer.axf
+ 
+12:27:10 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMac.d" -MT"drivers/mac/LoRaMac.o" -MT"drivers/mac/LoRaMac.d" -o "drivers/mac/LoRaMac.o" "../drivers/mac/LoRaMac.c"
+../drivers/mac/LoRaMac.c: In function 'ProcessMacCommands':
+../drivers/mac/LoRaMac.c:2145:17: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+                 printf("gps sec= %d y gps subsec= %d",gpsEpochTime.Seconds,gpsEpochTime.SubSeconds);
+                 ^~~~~~
+Finished building: ../drivers/mac/LoRaMac.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110688 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110332	    356	   9708	 120396	  1d64c	frdmkl46z_tpm_timer.axf
+ 
+12:36:18 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMac.d" -MT"drivers/mac/LoRaMac.o" -MT"drivers/mac/LoRaMac.d" -o "drivers/mac/LoRaMac.o" "../drivers/mac/LoRaMac.c"
+../drivers/mac/LoRaMac.c: In function 'ProcessMacCommands':
+../drivers/mac/LoRaMac.c:2145:17: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+                 printf("gps sec= %d y gps subsec= %d",gpsEpochTime.Seconds,gpsEpochTime.SubSeconds);
+                 ^~~~~~
+Finished building: ../drivers/mac/LoRaMac.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110688 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110332	    356	   9708	 120396	  1d64c	frdmkl46z_tpm_timer.axf
+ 
+12:39:08 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMac.d" -MT"drivers/mac/LoRaMac.o" -MT"drivers/mac/LoRaMac.d" -o "drivers/mac/LoRaMac.o" "../drivers/mac/LoRaMac.c"
+../drivers/mac/LoRaMac.c: In function 'ProcessMacCommands':
+../drivers/mac/LoRaMac.c:2145:17: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+                 printf("gps sec= %d y gps subsec= %d",gpsEpochTime.Seconds,gpsEpochTime.SubSeconds);
+                 ^~~~~~
+Finished building: ../drivers/mac/LoRaMac.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110688 B       256 KB     42.22%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110332	    356	   9708	 120396	  1d64c	frdmkl46z_tpm_timer.axf
+ 
+15:22:35 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'LoRaMacClassBDeviceTimeAns':
+../drivers/mac/LoRaMacClassB.c:1579:13: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+             printf("delay next becon = %d",Ctx.NvmCtx->BeaconCtx.BeaconTimingDelay);
+             ^~~~~~
+             sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110736 B       256 KB     42.24%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110380	    356	   9708	 120444	  1d67c	frdmkl46z_tpm_timer.axf
+ 
+15:30:14 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+23:07:00 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../drivers/mac/LoRaMacClassB.c: In function 'LoRaMacClassBDeviceTimeAns':
+../drivers/mac/LoRaMacClassB.c:1582:13: warning: implicit declaration of function 'printf'; did you mean 'sinhf'? [-Wimplicit-function-declaration]
+             printf("delay next becon = %d",Ctx.NvmCtx->BeaconCtx.BeaconTimingDelay);
+             ^~~~~~
+             sinhf
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110736 B       256 KB     42.24%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110380	    356	   9708	 120444	  1d67c	frdmkl46z_tpm_timer.axf
+ 
+23:39:08 **** Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../source/main.c
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+../source/main.c: In function 'main':
+../source/main.c:1253:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led1Timer, OnLed1TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+../source/main.c:1256:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led2Timer, OnLed2TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+Finished building: ../source/main.c
+ 
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110704 B       256 KB     42.23%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110348	    356	   9708	 120412	  1d65c	frdmkl46z_tpm_timer.axf
+ 
+23:41:40 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../drivers/mac/LoRaMacClassB.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"drivers/mac/LoRaMacClassB.d" -MT"drivers/mac/LoRaMacClassB.o" -MT"drivers/mac/LoRaMacClassB.d" -o "drivers/mac/LoRaMacClassB.o" "../drivers/mac/LoRaMacClassB.c"
+Finished building: ../drivers/mac/LoRaMacClassB.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110424 B       256 KB     42.12%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110068	    356	   9708	 120132	  1d544	frdmkl46z_tpm_timer.axf
+ 
+23:44:36 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+23:55:59 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+../source/main.c: In function 'main':
+../source/main.c:1253:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led1Timer, OnLed1TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+../source/main.c:1256:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led2Timer, OnLed2TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+Finished building: ../source/main.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110424 B       256 KB     42.12%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110068	    356	   9708	 120132	  1d544	frdmkl46z_tpm_timer.axf
+ 
+00:13:54 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+../source/main.c: In function 'main':
+../source/main.c:1253:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led1Timer, OnLed1TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+../source/main.c:1256:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led2Timer, OnLed2TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+Finished building: ../source/main.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110424 B       256 KB     42.12%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110068	    356	   9708	 120132	  1d544	frdmkl46z_tpm_timer.axf
+ 
+00:31:36 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKL46Z256VLL4 -DCPU_MKL46Z256VLL4_cm0plus -DFRDM_KL46Z -DFREEDOM -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../CMSIS -I../startup -I../utilities -I../board/src -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+../source/main.c: In function 'main':
+../source/main.c:1253:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led1Timer, OnLed1TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+../source/main.c:1256:40: warning: passing argument 2 of 'TimerInit' from incompatible pointer type [-Wincompatible-pointer-types]
+                 TimerInit( &Led2Timer, OnLed2TimerEvent );
+                                        ^~~~~~~~~~~~~~~~
+In file included from ../drivers/mac/LoRaMac.h:73:0,
+                 from ../source/main.c:32:
+../drivers/system/timer.h:61:6: note: expected 'void (*)(void *)' but argument is of type 'void (*)(void)'
+ void TimerInit( TimerEvent_t *obj, void ( *callback )( void *context ) );
+      ^~~~~~~~~
+Finished building: ../source/main.c
+ 
+Building target: frdmkl46z_tpm_timer.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmkl46z_tpm_timer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl46z_tpm_timer_Debug.ld -o "frdmkl46z_tpm_timer.axf"  ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_io.o ./utilities/fsl_log.o ./utilities/fsl_str.o  ./startup/startup_mkl46z4.o  ./source/NvmCtxMgmt.o ./source/main.o  ./drivers/system/adc.o ./drivers/system/delay.o ./drivers/system/eeprom.o ./drivers/system/fifo.o ./drivers/system/gpio.o ./drivers/system/gps.o ./drivers/system/i2c.o ./drivers/system/nvmm.o ./drivers/system/systime.o ./drivers/system/timer.o ./drivers/system/uart.o  ./drivers/soft-se/aes.o ./drivers/soft-se/cmac.o ./drivers/soft-se/soft-se.o  ./drivers/radio/sx1276/sx1276.o  ./drivers/mac/region/Region.o ./drivers/mac/region/RegionAU915.o ./drivers/mac/region/RegionCommon.o  ./drivers/mac/LoRaMac.o ./drivers/mac/LoRaMacAdr.o ./drivers/mac/LoRaMacClassB.o ./drivers/mac/LoRaMacCommands.o ./drivers/mac/LoRaMacConfirmQueue.o ./drivers/mac/LoRaMacCrypto.o ./drivers/mac/LoRaMacFCntHandler.o ./drivers/mac/LoRaMacParser.o ./drivers/mac/LoRaMacSerializer.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpsci.o ./drivers/fsl_pit.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o  ./board/src/board_46.o ./board/src/clock_config.o ./board/src/peripherals.o ./board/src/pin_mux.o  ./board/board.o ./board/delay-board.o ./board/eeprom-board.o ./board/gpio-board.o ./board/rtc-board.o ./board/spi-board.o ./board/sx1276-board.o ./board/uart-board.o ./board/utilities.o  ./CMSIS/system_MKL46Z4.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:      110420 B       256 KB     42.12%
+            SRAM:       10064 B        32 KB     30.71%
+Finished building target: frdmkl46z_tpm_timer.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "frdmkl46z_tpm_timer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl46z_tpm_timer.axf" "frdmkl46z_tpm_timer.bin" ; # checksum -p MKL46Z256xxx4 -d "frdmkl46z_tpm_timer.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 110064	    356	   9708	 120128	  1d540	frdmkl46z_tpm_timer.axf
+ 
+00:42:02 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+00:43:41 **** Incremental Build of configuration Debug for project frdmkl46z_tpm_timer ****
+make -r -j4 all 
+make: Nothing to be done for `all'.

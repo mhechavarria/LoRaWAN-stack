@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:frdmkl46z_LoraWan_spi_polling_b2b_transfer_master PE Release,org.eclipse.launchbar.core.descriptorType.default\:frdmkl46z_LoraWan_spi_polling_b2b_transfer_master JLink Release,org.eclipse.launchbar.core.descriptorType.default\:frdmkl46z_LoraWan_spi_polling_b2b_transfer_master JLink Debug,org.eclipse.launchbar.core.descriptorType.default\:frdmkl46z_LoraWan_spi_polling_b2b_transfer_master PE Debug
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:frdmkl46z_LoraWan_spi_polling_b2b_transfer_master\ JLink\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:frdmkl46z_LoraWan_spi_polling_b2b_transfer_master\ JLink\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:frdmkl46z_LoraWan_spi_polling_b2b_transfer_master\ PE\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:frdmkl46z_LoraWan_spi_polling_b2b_transfer_master\ PE\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

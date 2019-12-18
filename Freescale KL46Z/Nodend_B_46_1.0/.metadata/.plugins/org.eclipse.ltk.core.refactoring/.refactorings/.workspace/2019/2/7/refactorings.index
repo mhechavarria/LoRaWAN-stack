@@ -1,0 +1,12 @@
+1550414246561	Delete resource 'frdmkl46z_tpm_timer/frdmkl46z_tpm_timer JLink Debug.launch'
+1550414250983	Delete resource 'frdmkl46z_tpm_timer/frdmkl46z_tpm_timer JLink Release.launch'
+1550415332330	Delete resource 'frdmkl46z_tpm_timer/drivers/rtc-board.c'
+1550415338049	Delete resource 'frdmkl46z_tpm_timer/drivers/rtc-board.h'
+1550415346064	Delete resource 'frdmkl46z_tpm_timer/source/tpm_timer.c'
+1550415354705	Delete resource 'frdmkl46z_tpm_timer/source/mtb.c'
+1550415359892	Delete resource 'frdmkl46z_tpm_timer/source/semihost_hardfault.c'
+1550416390991	Delete 5 resources
+1550419489680	Delete resource 'frdmkl46z_tpm_timer/board/sx126x-board.h'
+1550419494086	Delete resource 'frdmkl46z_tpm_timer/board/sx1272-board.h'
+1550424959440	Delete resource 'frdmkl46z_tpm_timer/drivers/peripherals'
+1550427246621	Delete resource 'frdmkl46z_tpm_timer/board/saml21'

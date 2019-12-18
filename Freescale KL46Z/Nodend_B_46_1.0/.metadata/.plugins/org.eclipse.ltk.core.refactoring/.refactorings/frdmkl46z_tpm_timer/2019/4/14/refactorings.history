@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;frdmkl46z_tpm_timer/board/rtc-board_conpit (2).c&apos; to &apos;rtc-board.c&apos;" description="Rename resource &apos;rtc-board_conpit (2).c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="board/rtc-board_conpit (2).c" name="rtc-board.c" stamp="1554084147613" updateReferences="true"/>
+</session>
